@@ -1,0 +1,13 @@
+int inserir (int k, int x, int n, int v[]) {
+ int j;
+ j = n;
+ while (j > k) {
+   j = j - 1;
+   v[j] = v[j-1];
+ };
+ v[k] = x;
+ println(v[k]);
+ return n + 1;
+}
+int v[10];
+println(inserir(1,2,3,v));
